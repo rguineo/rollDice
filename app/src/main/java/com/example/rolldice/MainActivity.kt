@@ -16,8 +16,8 @@ class MainActivity : AppCompatActivity() {
 
         btnLanzar.setOnClickListener {
             tiempo()
-            //val mp = MediaPlayer.create(this, R.sound.sonido)
-            //mp.start()
+            val mp = MediaPlayer.create(this, R.raw.dice_sound)
+            mp.start()
         }
         rollDice()
     }
